@@ -20,6 +20,12 @@ public class TestController {
     public String change(ModelAndView view) {
         return  "测试修改";
     }
+
+    @GetMapping("/scmTest")
+    @ResponseBody
+    public String scmTest(ModelAndView view) {
+        return  "scmT测试";
+    }
     @GetMapping("/string")
     @ResponseBody
     public String toT(ModelAndView view) {
