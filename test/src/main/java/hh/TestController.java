@@ -15,12 +15,16 @@ public class TestController {
         return view;
     }
 
+    @GetMapping("/change")
+    @ResponseBody
+    public String change(ModelAndView view) {
+        return  "测试修改";
+    }
     @GetMapping("/string")
     @ResponseBody
     public String toT(ModelAndView view) {
         return  "hello";
     }
-
     @GetMapping("/judge")
     @ResponseBody
     public String judge(ModelAndView view,
