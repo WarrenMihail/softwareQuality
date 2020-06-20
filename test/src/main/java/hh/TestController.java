@@ -15,11 +15,6 @@ public class TestController {
         return view;
     }
 
-    @GetMapping("/change")
-    @ResponseBody
-    public String change(ModelAndView view) {
-        return  "测试修改";
-    }
 
     @GetMapping("/scmTest")
     @ResponseBody
